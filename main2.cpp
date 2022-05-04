@@ -19,25 +19,8 @@ int summ(vector <int> num){
     return sum;
 }
 
-void SelectionSort(vector<int> a[])
+void SelectionSort()
 {
-
-}
-
-void printElements()
-{
-
-    for (int i = 0; i < 5; i++) {
-        for (auto it = a[i].begin();
-             it != a[i].end(); it++) {
-            cout << *it;
-        }
-        cout << " ";
-    }
-}
-
-int main() {
-
     vector <int> count;
     int key;
     for (int i = 0; i < 4; i++)
@@ -51,6 +34,21 @@ int main() {
             a[key] = count;
         }
     }
+}
 
-    printElements();
+void print()
+{
+
+    for (int i = 0; i < 5; i++) {
+        for (auto it = a[i].begin();
+             it != a[i].end(); it++) {
+            cout << *it;
+        }
+        cout << " ";
+    }
+}
+
+int main() {
+    SelectionSort();
+    print();
 }
