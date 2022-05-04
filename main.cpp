@@ -10,6 +10,7 @@ vector<int> num2;
 vector<int> num3;
 vector<int> num4;
 vector<int> num5;
+vector<vector<int>> a {num1,num2,num3,num4,num5};
 
 void fill(){
     for(int i = 0; i < N; i++)
@@ -50,8 +51,6 @@ int main() {
     cin >> N;
 
     fill();
-
-    vector<vector<int>> a {num1,num2,num3,num4,num5};
 
     sort(a.begin(), a.end(), [](const vector<int>& a, const vector<int>& b)
     {
